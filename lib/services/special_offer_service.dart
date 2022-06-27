@@ -1,29 +1,8 @@
 part of 'services.dart';
 
-// class SpecialOfferService {
-//   static CollectionReference _specialOffer =
-//       FirebaseFirestore.instance.collection('special_offer');
-
-//   static Future<List<SpecialOffer>> getSpecialOfferData() async {
-//     QuerySnapshot snapshot = await _specialOffer.get();
-
-//     var document = snapshot.docs;
-
-//     List<SpecialOffer> listSpecialOfferData = [];
-
-//     for (var doc in document) {
-//       listSpecialOfferData.add(
-//         SpecialOffer(imgUrl: doc['imgUrl'], desc: doc['desc']),
-//       );
-//     }
-
-//     return listSpecialOfferData;
-//   }
-// }
-
 class SpecialOfferService {
   static Future<List<SpecialOffer>> getSpecialOfferData({http.Client? client}) async {
-    var url = yottaServerUrl + '/v1/whats-new';
+    var url = yottaServerUrl + 'demo';
     var headers = {'Content-Type': 'application/json'};
 
     if (client == null) {
