@@ -6,7 +6,7 @@ class PromoService {
     required String idMember,
     required String userCity,
   }) async {
-    var url = yottaServerUrl + '/v1/promo?member_id=$idMember';
+    var url = yottaServerUrl + 'demo';
     var headers = {'Content-Type': 'application/json'};
 
     if (client == null) {
@@ -49,7 +49,7 @@ class PromoService {
     http.Client? client,
     required ClaimPromoData claimPromoData,
   }) async {
-    var url = yottaServerUrl + '/v1/promo/claim';
+    var url = yottaServerUrl + 'demo';
     var headers = {'Content-Type': 'application/json'};
 
     if (client == null) {
@@ -72,7 +72,7 @@ class PromoService {
 
   static Future<List<ClaimedUserPromo>> getAllClaimedPromo(
       {http.Client? client, required String idMember}) async {
-    var url = yottaServerUrl + '/v1/promo/claimed/$idMember';
+    var url = yottaServerUrl + 'demo';
     var headers = {'Content-Type': 'application/json'};
 
     if (client == null) {
@@ -103,7 +103,7 @@ class PromoService {
     required String idMember,
     required int userPromoId,
   }) async {
-    var url = yottaServerUrl + '/v1/promo/claimed/$idMember/$userPromoId';
+    var url = yottaServerUrl + 'demo';
     var headers = {'Content-Type': 'application/json'};
 
     if (client == null) {
@@ -120,7 +120,7 @@ class PromoService {
     required String idMember,
     required String promoId,
   }) async {
-    var url = yottaServerUrl + '/v1/promo/claimed/$idMember';
+    var url = yottaServerUrl + 'demo';
     var headers = {'Content-Type': 'application/json'};
 
     if (client == null) {
@@ -165,7 +165,7 @@ class PromoService {
 
   static Future<ApiReturnValue> getDetailNextPurchasePromo(
       {http.Client? client, required String idMember}) async {
-    var url = yottaServerUrl + '/v1/promo-next-purchase/claimed/$idMember';
+    var url = yottaServerUrl + 'demo';
     var headers = {'Content-Type': 'application/json'};
 
     if (client == null) {
