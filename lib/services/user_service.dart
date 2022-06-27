@@ -18,7 +18,7 @@ class UserErorData {
 
 class UserServices {
   static CollectionReference _userCollection =
-      FirebaseFirestore.instance.collection('user');
+      FirebaseFirestore.instance.collection('demo');
 
   static Future<void> updateUser(User user) async {
     var status = await OneSignal.shared.getDeviceState();
@@ -43,7 +43,7 @@ class UserServices {
 
   static Future<void> getUserDataByIdMember(String id) async {
     QuerySnapshot _snap =
-        await _userCollection.where('id member', isEqualTo: id).get();
+        await _userCollection.where('demo', isEqualTo: id).get();
 
     var document = _snap.docs;
 
@@ -57,17 +57,6 @@ class UserServices {
         name: doc['nama'],
         phoneNumber: doc['nomor handphone'],
       ));
-    }
-
-    if (listMember.length == 1) {
-      print(
-          "${listMember[0].name} / ${listMember[0].idMember} / ${listMember[0].email} / ${listMember[0].city} / ${listMember[0].phoneNumber}");
-    } else {
-      print(
-          "${listMember[0].name} / ${listMember[0].idMember} / ${listMember[0].email} / ${listMember[0].city} / ${listMember[0].phoneNumber}");
-      print(
-          "${listMember[1].name} / ${listMember[1].idMember} / ${listMember[1].email} / ${listMember[1].city} / ${listMember[1].phoneNumber}");
-
     }
   }
 
@@ -86,16 +75,16 @@ class UserServices {
 
     return User(
       id,
-      email: snapshot['email'],
-      gender: snapshot['gender'],
-      city: snapshot['kota'],
-      name: snapshot['nama'],
-      phoneNumber: snapshot['nomor handphone'],
-      nickName: snapshot['panggilan'],
-      birthday: snapshot['tanggal lahir'],
-      idMember: snapshot['id member'],
-      tokenId: snapshot['token id'],
-      isEmailVerified: snapshot['isEmailVerified'],
+      email: snapshot['demo'],
+      gender: snapshot['demo'],
+      city: snapshot['demo'],
+      name: snapshot['demo'],
+      phoneNumber: snapshot['demo'],
+      nickName: snapshot['demo'],
+      birthday: snapshot['demo'],
+      idMember: snapshot['demo'],
+      tokenId: snapshot['demo'],
+      isEmailVerified: snapshot['demo'],
     );
   }
 
@@ -111,19 +100,14 @@ class UserServices {
     http.Client? client,
   }) async {
     _userCollection.doc(id).update({
-      'nama': name,
-      'panggilan': nickName,
-      'email': email,
-      'kota': city,
-      'tanggal lahir': date,
-      'nomor handphone': phoneNumber,
+      'demo': 'demo', 
     });
 
     if (client == null) {
       client = http.Client();
     }
 
-    String url = baseURL + 'penjualan/edit_customer_yotta';
+    String url = baseURL + 'demo';
 
     var response = await client.post(
       Uri.parse(url),
