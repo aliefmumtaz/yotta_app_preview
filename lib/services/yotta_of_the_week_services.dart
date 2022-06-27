@@ -1,7 +1,7 @@
 part of 'services.dart';
 class YottaOfTheWeekServices {
   static Future<List<YottaOfTheWeek>> getYottaOfTheWeekData({http.Client? client}) async {
-    var url = yottaServerUrl + '/v1/yotta-of-the-week/';
+    var url = yottaServerUrl + 'demo';
     var headers = {'Content-Type': 'application/json'};
 
     if (client == null) {
