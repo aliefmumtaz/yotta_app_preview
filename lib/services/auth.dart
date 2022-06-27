@@ -56,7 +56,7 @@ class AuthServices {
       client = http.Client();
     }
 
-    String url = baseURL + 'penjualan/hapus_customer_yotta';
+    String url = baseURL + 'demo';
 
     var response = await client.post(
       Uri.parse(url),
@@ -128,7 +128,7 @@ class AuthServices {
           client = http.Client();
         }
 
-        String url = baseURL + 'penjualan/tambah_customer';
+        String url = baseURL + 'demo';
 
         var response = await client.post(
           Uri.parse(url),
@@ -152,8 +152,6 @@ class AuthServices {
 
         print(response.body.toString());
 
-        // set data to yotta database
-        // {"status":false,"message":"Email sudah terdaftar..","data":{}}
         if (response.body.toString() ==
             '{"status":false,"message":"Email sudah terdaftar..","data":{}}') {
           print('email sudah terdaftar di booble');
@@ -205,7 +203,7 @@ class AuthServices {
         client = http.Client();
       }
 
-      String url = baseURL + 'penjualan/hapus_customer_yotta';
+      String url = baseURL + 'demo';
 
       var response = await client.post(
         Uri.parse(url),
@@ -254,7 +252,7 @@ class AuthServices {
       client = http.Client();
     }
 
-    String url = baseURL + 'penjualan/detail_customer';
+    String url = baseURL + 'demo';
 
     var respone = await client.post(
       Uri.parse(url),
