@@ -1,0 +1,34 @@
+import 'dart:async';
+import 'dart:convert';
+import 'dart:math';
+
+import 'package:yotta_user_app/models/models.dart';
+import 'package:firebase_auth/firebase_auth.dart' as auth;
+import 'package:yotta_user_app/extentions/extentions.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:dio/dio.dart';
+import 'package:yotta_user_app/shared/shared.dart';
+// import 'package:connectivity/connectivity.dart';
+import 'package:http/http.dart' as http;
+import 'package:onesignal_flutter/onesignal_flutter.dart';
+import 'package:collection/collection.dart';
+
+part 'auth.dart';
+part 'user_service.dart';
+part 'choose_city_for_registration_service.dart';
+part 'search_id_member_service.dart';
+part 'special_offer_service.dart';
+part 'menu_service.dart';
+part 'detail_order_services.dart';
+part 'list_outlet_services.dart';
+part 'generate_pickup_time_services.dart';
+part 'selected_order_service.dart';
+part 'checkout_order_service.dart';
+part 'history_order_services.dart';
+part 'geolocation_services.dart';
+part 'yotta_of_the_week_services.dart';
+part 'notification_services.dart';
+part 'delivery_order_service.dart';
+part 'user_data.dart';
+part 'promo_services.dart';

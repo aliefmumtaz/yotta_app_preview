@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>120899737040-730b656t6gel7um6c5laaes6g8m1qte0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.120899737040-730b656t6gel7um6c5laaes6g8m1qte0</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>120899737040-292kimqteeaefl8tup0u6g7bap31j6s3.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2YdVagq_i4YRQ-i1Orw1ZWEJofWOE4pk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>120899737040</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yotta.yottaapp</string>
+	<key>PROJECT_ID</key>
+	<string>yotta-app-3f95f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yotta-app-3f95f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:120899737040:ios:1caae81a1b970f1822d5d5</string>
+	<key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.120899737040-730b656t6gel7um6c5laaes6g8m1qte0</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>

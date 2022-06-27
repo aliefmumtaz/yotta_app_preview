@@ -1,0 +1,12 @@
+
+build/ios/Pods.build/Release-iphonesimulator/gRPC-C++.build/dgph
+build/ios/Pods.build/Release-iphonesimulator/gRPC-Core.build/dgph
+build/ios
+build
+.dart_tool
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.DS_Store
+assets/
+*.png

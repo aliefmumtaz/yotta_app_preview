@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "120899737040",
+    "project_id": "yotta-app-3f95f",
+    "storage_bucket": "yotta-app-3f95f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120899737040:android:19fb0d3ba274431c22d5d5",
+        "android_client_info": {
+          "package_name": "com.yotta.yottaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120899737040-glclc4uluvegh4vsmcsifdrcemj4frpe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yotta.yottaapp",
+            "certificate_hash": "60436c7c818598c97e292f91423751b2ce6181d5"
+          }
+        },
+        {
+          "client_id": "120899737040-cuqvoku6ojdqo8k6c68q2fhj1vcppgvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA48iylC2ihg5soWBHzoKSeCKjcAVotnrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120899737040-cuqvoku6ojdqo8k6c68q2fhj1vcppgvb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "120899737040-730b656t6gel7um6c5laaes6g8m1qte0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yotta.yottaapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
